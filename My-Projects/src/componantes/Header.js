@@ -7,7 +7,7 @@ function Header() {
     <>
 
       <header className="header">
-        <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "transparent" }}>
+        <nav id='navbar-header' className="navbar navbar-expand-lg ">
           <div className="container-fluid">
             <Link className="navbar-brand" href="/">
               <img src='https://img.freepik.com/premium-photo/colorful-letter-black-background-with-colorful-letter_978914-26725.jpg?uid=R110548454&ga=GA1.1.1141462583.1754242011&semt=ais_hybrid&w=740&q=80' alt='' className='img-fluid border rounded-4' style={{ width: "60px" }} />
@@ -31,8 +31,8 @@ function Header() {
 
 
               <a href="https://wa.link/at5ion">
-  <button className="btn btn-book-nav">BOOK NOW</button>
-</a>
+                <button className="btn btn-book-nav">BOOK NOW</button>
+              </a>
             </div>
           </div>
         </nav>

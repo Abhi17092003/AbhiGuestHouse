@@ -11,6 +11,7 @@ const Gallery = () => {
     "https://picsum.photos/id/1022/600/400",
     "https://picsum.photos/id/1023/600/400",
     "https://picsum.photos/id/1024/600/400",
+    "https://picsum.photos/id/1019/600/400",
   ];
 
   const [current, setCurrent] = useState(0);

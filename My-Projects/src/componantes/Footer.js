@@ -9,7 +9,7 @@ function Footer() {
           <div className="footer__col">
             <div className="logo">
               <Link to="/">
-                              <img src='https://img.freepik.com/premium-photo/colorful-letter-black-background-with-colorful-letter_978914-26725.jpg?uid=R110548454&ga=GA1.1.1141462583.1754242011&semt=ais_hybrid&w=740&q=80' alt='' className='img-fluid border rounded-4' style={{ width: "60px" }} />
+                <img src='https://img.freepik.com/premium-photo/colorful-letter-black-background-with-colorful-letter_978914-26725.jpg?uid=R110548454&ga=GA1.1.1141462583.1754242011&semt=ais_hybrid&w=740&q=80' alt='' className='img-fluid border rounded-4' style={{ width: "60px" }} />
 
               </Link>
             </div>
@@ -18,9 +18,9 @@ function Footer() {
               our curated selection of hotels, making every moment of your getaway
               truly extraordinary.
             </p>
-             <a href="https://wa.link/at5ion">
-  <button className="btn btn-book-nav mt-3 mb-2">BOOK NOW</button>
-</a>
+            <a href="https://wa.link/at5ion">
+              <button className="btn btn-book-nav mt-3 mb-2">BOOK NOW</button>
+            </a>
           </div>
 
           <div className="footer__col">
@@ -48,7 +48,7 @@ function Footer() {
             <h4 className='footer-header'>CONTACT US</h4>
             <ul className="footer__links">
               <li>
-                 <a href="https://maps.app.goo.gl/nNRTPknt2Fk4qrob6" target='_blank'>
+                <a href="https://maps.app.goo.gl/nNRTPknt2Fk4qrob6" target='_blank'>
                   Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156
                 </a>
               </li>
@@ -65,9 +65,9 @@ function Footer() {
             </div>
           </div>
         </div>
-       <div className="hr-line">
-  <hr />
-</div>
+        <div className="hr-line">
+          <hr />
+        </div>
 
         <div className="footer__bar">
           Copyright © 2024 Kingsukh Guest House. All rights reserved.

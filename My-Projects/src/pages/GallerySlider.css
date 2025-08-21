@@ -1,0 +1,178 @@
+.card-slider {
+  background: #fff8f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.crew-carousel {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  position: relative;
+  perspective: 1000px;
+  margin-top: 40px;
+}
+
+.crew-track {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.crew-card {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+
+.crew-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.crew-card.center {
+  z-index: 10;
+  transform: scale(1.1);
+}
+
+.crew-card.left-1 {
+  transform: translateX(-200px) scale(0.9);
+  opacity: 0.8;
+  filter: grayscale(70%);
+}
+
+.crew-card.left-2 {
+  transform: translateX(-400px) scale(0.8);
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+
+.crew-card.right-1 {
+  transform: translateX(200px) scale(0.9);
+  opacity: 0.8;
+  filter: grayscale(70%);
+}
+
+.crew-card.right-2 {
+  transform: translateX(400px) scale(0.8);
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+
+.crew-card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.crew-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.crew-name {
+  font-size: 2rem;
+  color: #cc5500;
+}
+
+.crew-role {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #aa4400;
+  letter-spacing: 0.1em;
+}
+
+.crew-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.crew-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(204, 85, 0, 0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.crew-dot.active {
+  background: #cc5500;
+  transform: scale(1.2);
+}
+
+.crew-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(204, 85, 0, 0.8);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.crew-arrow:hover {
+  background: rgba(170, 68, 0, 0.9);
+}
+
+.crew-left { left: 10px; }
+.crew-right { right: 10px; }
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .crew-carousel {
+    height: 320px;
+  }
+
+  .crew-card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .crew-card.left-1 { transform: translateX(-120px) scale(0.85); }
+  .crew-card.left-2 { transform: translateX(-240px) scale(0.7); }
+  .crew-card.right-1 { transform: translateX(120px) scale(0.85); }
+  .crew-card.right-2 { transform: translateX(240px) scale(0.7); }
+
+  .crew-name { font-size: 1.5rem; }
+  .crew-role { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+  .crew-carousel {
+    height: 260px;
+  }
+
+  .crew-card {
+    width: 160px;
+    height: 220px;
+  }
+
+  .crew-card.left-1 { transform: translateX(-90px) scale(0.8); }
+  .crew-card.left-2 { transform: translateX(-180px) scale(0.6); }
+  .crew-card.right-1 { transform: translateX(90px) scale(0.8); }
+  .crew-card.right-2 { transform: translateX(180px) scale(0.6); }
+
+  .crew-name { font-size: 1.2rem; }
+  .crew-role { font-size: 0.8rem; }
+}

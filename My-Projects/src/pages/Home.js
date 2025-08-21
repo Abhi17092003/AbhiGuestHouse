@@ -1,5 +1,6 @@
 import React from 'react';
 import Gallery from './Gallery';
+import GallerySlider from './GallerySlider';
 
 function Home() {
   return (
@@ -54,6 +55,8 @@ function Home() {
         </div>
       </section>
 
+
+
       <section className="section__container room__container" id="rooms">
         <p className="section__subheader">OUR LIVING ROOM</p>
         <h2 className="section__header">The Most Memorable Rest Time Starts Here.</h2>
@@ -74,7 +77,7 @@ function Home() {
 
             <div className="col-md-4">
               <div className="card room-card">
-                <img src="assets/large.jpg" className="card-img-top" alt="Room 2" />
+                <img src="assets/small.jpg" className="card-img-top" alt="Room 2" />
                 <div className="card-body">
                   <h5 className="room-title">Cozy Comfort Room</h5>
                   <p>Perfect for couples, offering warmth and relaxation with modern amenities.</p>
@@ -103,55 +106,8 @@ function Home() {
       </section>
 
 
-      {/* <section className="section__container room__container" id="rooms">
-        <p className="section__subheader">OUR LIVING ROOM</p>
-        <h2 className="section__header">The Most Memorable Rest Time Starts Here.</h2>
-        <div className="room__grid">
-          <div className="room__card">
-            <div className="room__card__image">
-              <img src="assets/small.jpg" alt="room" />
-              <div className="room__card__icons">
-                <span><i className="ri-heart-fill"></i></span>
-                <span><i className="ri-paint-fill"></i></span>
-                <span><i className="ri-shield-star-line"></i></span>
-              </div>
-            </div>
-            <div className="room__card__details">
-              <h4>Cozy Haven Room</h4>
-              <p>
-                Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.
-              </p>
-              <h5>Starting from <span>Rs. 1000/night</span></h5>
-              <a href="https://wa.link/at5ion">
-                <button className="btn">BOOK NOW</button>
-              </a>
-            </div>
-          </div>
-          <div className="room__card">
-            <div className="room__card__image">
-              <img src="assets/large.jpg" alt="room" />
-              <div className="room__card__icons">
-                <span><i className="ri-heart-fill"></i></span>
-                <span><i className="ri-paint-fill"></i></span>
-                <span><i className="ri-shield-star-line"></i></span>
-              </div>
-            </div>
-            <div className="room__card__details">
-              <h4>Spacious Serenity Suite</h4>
-              <p>
-                Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.
-              </p>
-              <h5>Starting from <span>Rs. 1500/night</span></h5>
-              <a href="https://wa.link/at5ion">
-                <button className="btn">BOOK NOW</button>
-              </a>
-            </div>
-          </div>
 
 
-
-        </div>
-      </section> */}
 
 
       <section id="service">
@@ -217,16 +173,15 @@ function Home() {
       </section>
 
 
-   <section id="gallary">
-        <div className="about__content">
-          <p className="section__subheader" style={{ textAlign: "center" }}>GALLARY</p>
-        </div>
 
-    <div className=' container mt-4 mb-2'>
-   <Gallery />
 
-    </div>
-   </section>
+
+
+      <section>
+        <GallerySlider />
+      </section>
+
+
 
 
 
@@ -302,6 +257,28 @@ function Home() {
           </div>
         </div>
       </section>
+
+
+
+    
+
+      <section class="map-section">
+        <div class="container-fluid p-0">
+          <div class="map-container mt-4 mb-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14626.006982706758!2d86.85979!3d23.586332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1755627208756!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
     </>
   );
 }

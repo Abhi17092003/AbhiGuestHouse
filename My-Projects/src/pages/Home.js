@@ -177,7 +177,7 @@ function Home() {
 
 
 
-      <section>
+      <section id="gallary">
         <GallerySlider />
       </section>
 
